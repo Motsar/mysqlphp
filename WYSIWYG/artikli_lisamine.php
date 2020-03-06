@@ -7,15 +7,21 @@
             width: 700px;
         }
     </style>
-    <script src="ckeditor/ckeditor.js"></script>
+
 </head>
 <body>
+<script src="/ckeditor/ckeditor.js"></script>
 <div id="sisu">
-    <h1>Artikli lisamine</h1>
+    <h2>Artikli lisamine</h2>
 
     <form action="" method="post">
 			<textarea class="ckeditor" cols="20" name="uudis" id="uudis" rows="10">
             </textarea>
+        <script>
+            CKEDITOR.replace( 'uudis', {
+                uiColor: '#367cc4'
+            });
+        </script>
         <br>
         <input type="submit" value="Salvesta">
     </form>
